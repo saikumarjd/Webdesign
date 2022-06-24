@@ -1,0 +1,15 @@
+*{
+	box-sizing:border-box;
+}
+.grid-container{
+	display:grid;
+	grid-template-columns:2fr 1fr;
+	border:10px solid green;
+	height:20vh;
+}
+.grid-item{
+	background-color: pink;
+	border:20px solid red;
+	padding:20px solid blue;
+	font-size:20px;
+}
