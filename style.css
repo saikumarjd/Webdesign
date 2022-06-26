@@ -1,8 +1,11 @@
 
 .flexbox-container{
 	display:flex;
-	justify-content:space-between;
-	align-items:center;
+
+	/*flex-direction:row;
+	justify-content:center;
+	align-content:center;*/
+
 	}
 .flexbox-item{
 	margin: 100px blue;
@@ -15,12 +18,15 @@
 
 .flexbox-item1{
 	font-color:red;
+	flex-shrink:0;
 	min-height:200px;
 }
 .flexbox-item2{
 	min-height:300px;
+/*	flex-grow:1; */
         }
 .flexbox-item3{
+	/*align-self:center;*/
 }
 
 .flexbox-item4{
