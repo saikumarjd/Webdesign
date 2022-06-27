@@ -2,29 +2,65 @@
 <html>
         <head>
                 <title> This is Full Stack developer Course</title>
-		<link rel="stylesheet" type="text/CSS" href="style.css"> 
+		<style type="text/CSS" >
+		/* .box{
+			background-color:red;
+			width:200px;
+			height:200px;
+			animation:demo 1s forwards infinite;
+		}*/
+		.parent{
+			background-color:blue;
+			width:500px;
+			height:500px;
+			}
+		
+		.child{
+			background-color:white;
+			width:50%;
+			height:50%;
+		}
+		.parent:hover .child{
+			animation:a 1s forwards infinite alternate;
+		}
+		@keyframes a{
+			
+			0%{
+				transform:translateX(0%);
+			
+			}
+			30%{
+				transform:translatey(100%);
+			}
+			100%{
+				transform:translateX(100%) translateY(100%);
+			}
+		}
+
+
+
+		/*@keyframes demo{
+			from{
+				height:200px;
+				width:200px;
+			}
+			to{
+				height:700px;
+				width:500px;
+			}
+		}*/
+		</style>
 			               
         </head>
 
         <body >
-		<header>
-			<ul class="nav-list">
-				<li class="list list-a"> <a href="#">About</a></li>
-				<li class="list list-b"> <a href="#">Help</a></li>
-				<li class="list list-c"> <a href="#">Contact</a></li>
-			</ul>
-		</header>
-		<aside>
-			<p> This is aside block </p>
-			<h1> Header in aside</h1>
+	<div class="box">
+	</div>
+	<div class="parent">
+		<div class="child">
+		</div>
+	</div>
 
-		</aside>
-		<main> 
-			<h1> This is related to Grid vs Flex </h1>
-		</main>
-		<footer>
-			<h1> Terms and Conditions(T&C).</h1>
-		</footer>
 
 
 			 
